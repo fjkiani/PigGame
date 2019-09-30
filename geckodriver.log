@@ -1,0 +1,44 @@
+1556239683305	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7_/_f28xw_d5hz9jyym22_4yhtm0000gn/T/rust_mozprofile.Lsxzlu5gvSWg"
+1556239721379	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556239721381	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556239721382	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+2019-04-25 20:48:43.542 firefox-bin[86269:2716017] IMKClient Stall detected, *please Report* your user scenario attaching a spindump (or sysdiagnose) that captures the problem - (imkxpc_attributesForCharacterIndex:reply:) block performed very slowly (1.24 secs).
+2019-04-25 20:48:48.523 firefox-bin[86269:2716017] IMKClient Stall detected, *please Report* your user scenario attaching a spindump (or sysdiagnose) that captures the problem - (imkxpc_inputSessionDoneSleepWithReply:) block performed very slowly (4.25 secs).
+2019-04-25 20:48:55.482 firefox-bin[86269:2716017] IMKClient Stall detected, *please Report* your user scenario attaching a spindump (or sysdiagnose) that captures the problem - (imkxpc_attributesForCharacterIndex:reply:) block performed very slowly (2.89 secs).
+1556239738753	Marionette	INFO	Listening on port 50917
+1556239738881	Marionette	WARN	TLS certificate errors will be ignored for this session
+1556239784363	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7_/_f28xw_d5hz9jyym22_4yhtm0000gn/T/rust_mozprofile.dXlQzXYeaLAF"
+1556239792575	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556239792578	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556239792578	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556239800578	Marionette	INFO	Listening on port 51626
+1556239800632	Marionette	WARN	TLS certificate errors will be ignored for this session
+1556240031303	Marionette	INFO	Stopped listening on port 50917
+1556240096672	Marionette	INFO	Stopped listening on port 51626
+1556240548102	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7_/_f28xw_d5hz9jyym22_4yhtm0000gn/T/rust_mozprofile.exZdIh0crZeq"
+1556240549345	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1556240549349	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1556240549349	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1556240552977	Marionette	INFO	Listening on port 50005
+1556240553079	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
+
+JavaScript error: chrome://browser/content/browser.js, line 2947: TypeError: Cc['@mozilla.org/security/certoverride;1'] is undefined
+JavaScript error: chrome://browser/content/browser.js, line 2947: TypeError: Cc['@mozilla.org/security/certoverride;1'] is undefined
+JavaScript error: chrome://browser/content/browser.js, line 2947: TypeError: Cc['@mozilla.org/security/certoverride;1'] is undefined
+JavaScript error: chrome://browser/content/browser.js, line 2947: TypeError: Cc['@mozilla.org/security/certoverride;1'] is undefined
+JavaScript error: chrome://browser/content/browser.js, line 2947: TypeError: Cc['@mozilla.org/security/certoverride;1'] is undefined
+JavaScript error: chrome://browser/content/browser.js, line 2947: TypeError: Cc['@mozilla.org/security/certoverride;1'] is undefined
+JavaScript error: chrome://browser/content/browser.js, line 2947: TypeError: Cc['@mozilla.org/security/certoverride;1'] is undefined
+JavaScript error: chrome://browser/content/browser.js, line 2947: TypeError: Cc['@mozilla.org/security/certoverride;1'] is undefined
+JavaScript error: chrome://browser/content/browser.js, line 2947: TypeError: Cc['@mozilla.org/security/certoverride;1'] is undefined
+2019-04-27 09:15:12.098 firefox-bin[1174:10852] IMKClient Stall detected, *please Report* your user scenario attaching a spindump (or sysdiagnose) that captures the problem - (imkxpc_attributesForCharacterIndex:reply:) block performed very slowly (2.63 secs).
+1556370915920	addons.xpi-utils	WARN	Error: XPI database modified after shutdown began(resource://gre/modules/addons/XPIDatabase.jsm:1233:17) JS Stack trace: saveChanges@XPIDatabase.jsm:1233:17
+verifySignatures@XPIDatabase.jsm:1541:7
+1556370923197	Marionette	INFO	Stopped listening on port 50005
