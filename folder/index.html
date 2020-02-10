@@ -6,12 +6,17 @@
         <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
         <link type="text/css" rel="stylesheet" href="style.css">
         <link href="/images/..">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
         
-        <title>Pig Game</title>
+        <title>Halal Game</title>
     </head>
 
     <body>
-        <div class="heading"><img src="pigGame.jpg" alt= "Pig Game by Fjkiani">
+
+        </div>
+        <div class="heading"><img src="halal.jpg" alt= "Halal Game by Fjkiani">
         </div>
         <div class="wrapper clearfix">
             <!-- player 0  -->
@@ -19,7 +24,7 @@
                 <div class="player-name" id="name-0">Player 1</div>
                 <div class="player-total-label">Total</div>
                 <div class="player-score" id="score-0">43 is the total score</div>
-                <!-- <div class="player-current-label">Current</div> -->
+                <div class="player-current-label">Current</div>
                     <div class="player-current-score" id="current-0"></div>
                 </div>
             </div>
@@ -35,16 +40,27 @@
                 </div>
             </div>
             
+
             <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
-            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <div class="heading">
+            
+        
+
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Earn Points For Good Deeds</button>
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
             
-            <img src="dice-5.png" alt="Dice" class="dice">
-            <div class="heading">
-                    <h2>Instructions</h2>
-                    <p>The first player to reach 20 points or more is the winner. When it is your turn, you roll. If you get a Pig-Out or an Oinker (0), then you pass the pigs onto the next player. If you get anything else, you may decide to roll again or pass the pigs.</p>
+            <img class="choice" id='choice1' alt="Dice">
+            
+            <button onclick="instructions()">Instructions</button>
+
+                    <p>The first player to reach 20 points is the winner by earning blessings
+
+                    </p>
                 </div>
         </div>
-        <script src="app.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+       
     </body>
 </html>

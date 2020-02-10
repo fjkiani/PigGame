@@ -1,25 +1,4 @@
-console.log('hi')
-
-let testClick = () => {
-    document.getElementById('testClick');
-    // swal();
-    console.log('hi');
-}
-
-/*
-GAME RULES:
-
-- The game has 2 players, playing in rounds
-- In each turn, a player rolls a dice as many times as he whishes. Each result get added to his ROUND score
-- BUT, if the player rolls a 1, all his ROUND score gets lost. After that, it's the next player's turn
-- The player can choose to 'Hold', which means that his ROUND score gets added to his GLBAL score. After that, it's the next player's turn
-- The first player to reach 100 points on GLOBAL score wins the game
-
-*/
-
-//create variables for scores, roundScore, dice
-//create a math.random that will give a number between 1-6 -> assign this to player score
-
+console.log("hi");
 let scores, roundScore, activePlayer;
 
 //invoke function as the window loads
@@ -45,41 +24,115 @@ document.querySelector(".btn-new").addEventListener("click", init);
 //callback function
 // document.querySelector('.btn-roll').addEventListener('click', btn)
 
-document.querySelector(".choice").style.display = "none";
-
 //anonymous function -> can only be used once
 document.querySelector(".btn-roll").addEventListener("click", function() {
   //1. create a random number
-  let choice = Math.floor(Math.random() * 6) + 1;
+  let choice = Math.floor(Math.random() * 8) + 1;
 
   // 2. assign a handle/variable to the the picture that is displayed
   let choiceDom = document.querySelector(".choice");
   choiceDom.style.display = "block";
   //change picture on each click using type coersion
-  let values = (choiceDom.src = "choice-" + choice + ".png");
+  let values = choiceDom.src = "choice-" + choice + ".png";
   console.log(values);
-  if (choice === 3) {
 
-      }
-
-  if (choice === 2) {
-    sweetAlertClick('you got choice 2');
-
-  }
-
+  //sins choices
   if (choice === 1) {
-    alert("you got a 1 haha you lose your points");
+    swal({
+      title: "\"Oh no! You claimed a sick day when you were perfectly well!\"",
+      text: "You lost your points!",
+      icon: "warning",
+      button: "Ok I won't call out \"sick\" again",
+    });
   }
+
+  if (choice === 2 ) {
+    swal({
+      title: "You just lost your points",
+      text: "You were envious of your best friends new car!",
+      icon: "warning",
+      button: "Ok I won't be envious again ",
+    });
+  }
+
+
+  if (choice === 3 ) {
+    swal({
+      title: "Oh no! You claimed a sick day when you were perfectly well!",
+      text: "You lost your points!",
+      icon: "warning",
+      button: "Ok ",
+    });
+  }
+
+  //good deeds
+  if (choice === 4) {
+    swal({
+      title: "\"No one has ever become poor by giving.\"",
+      text: "You just earned 4 points by helping someone on your way home!",
+      icon: "success",
+      button: "Earn more deeds!",
+    });
+  }
+
+  if (choice === 5 ) {
+    swal({
+      title: "\"your greatness is not what you have. it's what you give\"",
+      text: "You just earned 4 points!",
+      icon: "success",
+      button: "Aww yiss!",
+    });
+
+  }
+
+  if (choice === 6 ) {
+    swal({
+      title: "\"your greatness is not what you have. it's what you give\"",
+      text: "Awesome! You just earned 4 points by uplifting someone else!",
+      icon: "success",
+      button: "Aww yiss!",
+    });
+  }
+
+  if (choice === 7 ) {
+    swal({
+      title: "\"Prayer begins where human capacity ends\"",
+      text: "You just earned 7 points by praying for everyone you know!",
+      icon: "success",
+      button: "Town Is Ours",
+    });
+  }
+
+  if (choice === 8 ) {
+    swal({
+      title: "You are the real bread winner <3",
+      text: "You just earned 8 points! by sharing your lunch!",
+      icon: "success",
+      button: "bread game strong :)",
+    });
+  }
+
+  if (choice === 9 ) {
+    swal({
+      title: "\"your greatness is not what you have. it's what you give\"",
+      text: "You just earned 4 points by donating your spare change!",
+      icon: "success",
+      button: "Aww yiss!",
+    });
+  }
+
+
   // 3. update the score if the number is not 1
-  if (choice !== 1) {
+  if (roundScore > 25) {
+    alert("you lost, your score went over 25");
+    init();
+  }
+  if (choice != 1 && choice != 2 && choice != 3 ) {
     console.log((roundScore += choice));
     //update on element
     document.querySelector("#current-" + activePlayer).textContent = roundScore;
-    if (roundScore > 25) {
-      alert("you lost, your score went over 25");
-      init();
-    }
-  } else {
+  } 
+  else {
     nextPlayer();
   }
 });
@@ -129,8 +182,8 @@ function nextPlayer() {
   document.querySelector(".player-1-panel").classList.toggle("active");
 
   //hide dice when it is the other players turn
-  //  document.querySelector('.choice').style.display =
-  //  'none';
+
+  // document.querySelector(".choice").style.display = "none";
 
   // document.querySelector('.player-0-panel').classList.remove('active');
   // document.querySelector('.player-1-panel').classList.add('active');
@@ -159,8 +212,11 @@ function init() {
 
   document.querySelector(".player-0-panel").classList.remove("winnerClass");
   document.querySelector(".player-1-panel").classList.remove("winnerClass");
-  document.querySelector(".choice").style.display = "none";
+
+  // document.getElementById("choice").style.display = "none";
 }
+swal("Halal Game by Fjkiani");
 
-
-
+function instructions () {
+  swal("The first player to reach 20 points by earning blessing wins, but if you earn more, you transfer your points over! ");
+}
